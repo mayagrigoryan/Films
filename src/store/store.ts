@@ -1,9 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import genresSlice from './slices/genresSlice'
+import globalSlice from './slices/globalSlice'
+import filmsSlice from './slices/filmsSlice'
 
 export const store = configureStore({
     reducer : {
-        genresData : genresSlice
+        genresData : genresSlice,
+        globalData : globalSlice,
+        filmsData : filmsSlice
     }
 })
 
